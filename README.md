@@ -3,4 +3,4 @@ A set of algorithms and data structures that are not part of the standard Go pac
 on a daily basis.
 
 ## Algorithms
-* **Stack**: backed by a linked list
+* **Stack**: backed by a linked list. If you are too constrained by space, feel free to contribute an implementation backed by a resizeable array. If you are constrained by time, this implementation is for you.
