@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/c4milo/gotoolkit.png?label=ready)](https://waffle.io/c4milo/gotoolkit)
 # Go Toolkit
 [![GoDoc](https://godoc.org/github.com/cloudescape/gotoolkit?status.svg)](https://godoc.org/github.com/cloudescape/gotoolkit)
 [![Build Status](https://travis-ci.org/cloudescape/gotoolkit.svg?branch=master)](https://travis-ci.org/cloudescape/gotoolkit)
