@@ -3,9 +3,9 @@
 ## Code of conduct
 *Taken from http://libvirt.org/governance.html with minor adjustments.*
 
-The open source community covers people from a wide variety of countries, backgrounds and positions. This global diversity is a great strength for this project, but can also lead to communication issues, which may in turn cause unhappiness. To maximise happiness of the project community taken as a whole, all members (whether users, contributors or committers) are expected to abide by the project's code of conduct. At a high level the code can be summarized as "be excellent to each other". Expanding on this:
+The open source community covers people from a wide variety of countries, backgrounds and positions. This global diversity is a great strength for this project, but can also lead to communication issues, which may in turn cause unhappiness. To maximize happiness of the project community taken as a whole, all members (whether users, contributors or committers) are expected to abide by the project's code of conduct. At a high level the code can be summarized as "be excellent to each other". Expanding on this:
 
-**Be respectful:** disagreements between people are to be expected and are usually the sign of healthy debate and engagement. Disagreements can lead to frustration and even anger for some members. Turning to personal insults, intimidation or threatening behaviour does not improve the situation. Participants should thus take care to ensure all communications / interactions stay professional at all times.
+**Be respectful:** disagreements between people are to be expected and are usually the sign of healthy debate and engagement. Disagreements can lead to frustration and even anger for some members. Turning to personal insults, intimidation or threatening behavior does not improve the situation. Participants should thus take care to ensure all communications / interactions stay professional at all times.
 
 **Be considerate:** remember that the community has members with a diverse background many of whom have English as a second language. What might appear impolite, may simply be a result of a lack of knowledge of the English language. Bear in mind that actions will have an impact on other community members and the project as a whole, so take potential consequences into account before pursuing a course of action.
 
@@ -24,20 +24,19 @@ Go is unlike any other language in that it forces a specific development workflo
 
 ### Prerequisites
 * **Go**: To install Go please follow its installation guide at https://golang.org/doc/install
-* **Git:** 
+* **Git:**
    * **Debian-based distros:** `apt-get install git-core`
    * **OSX:** `brew install git`
 
 ### Pull Requests
 * Please be generous describing your changes.
-* Although it is highly suggested to include tests, they are not a hard requirement in order to get your contributions accepted. 
-* Keep pull requets small so core developers can review them quickly.
-* Unlike other projects, we are not going to nitpick your contributions. If your pull request is correct, we are going to merge and address the small details by ourselves. There is no point on delaying contributions due to little and unimportant details.
+* Although it is highly suggested to include tests, they are not a hard requirement in order to get your contributions accepted.
+* Keep pull requests small so core developers can review them quickly.
 
 ### Workflow for third-party code contributions
-* In Github, fork `https://github.com/cloudescape/gotoolkit` to your own account
-* Get the package using "go get": `go get github.com/cloudescape/gotoolkit`
-* Move to where the package was cloned: `cd $GOPATH/src/github.com/cloudescape/gotoolkit/`
+* In Github, fork `https://github.com/c4milo/gotoolkit` to your own account
+* Get the package using "go get": `go get github.com/c4milo/gotoolkit`
+* Move to where the package was cloned: `cd $GOPATH/src/github.com/c4milo/gotoolkit/`
 * Add a git remote pointing to your own fork: `git remote add downstream git@github.com:<your_account>/gotoolkit.git`
 * Create a branch for making your changes, then commit them.
 * Push changes to downstream repository, this is your own fork: `git push <mybranch> downstream`
@@ -48,7 +47,7 @@ Go is unlike any other language in that it forces a specific development workflo
 ### Workflow for core developers
 Since core developers usually have access to the upstream repository, there is no need for having a workflow like the one for thid-party contributors.
 
-* Get the package using "go get": `go get github.com/cloudescape/gotoolkit`
+* Get the package using "go get": `go get github.com/c4milo/gotoolkit`
 * Create a branch for making your changes, then commit them.
 * Push changes to the repository: `git push origin <mybranch>`
 * In Github, create the Pull Request from your branch to master.
