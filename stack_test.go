@@ -15,7 +15,7 @@ func TestPush(t *testing.T) {
 		stack.Push("Test")
 
 		if stack.Size() == 0 {
-			t.Errorf("Incorrect result\ngot:  %d\nwant: %d", stack.Size, 0)
+			t.Errorf("Incorrect result\ngot:  %d\nwant: %d", stack.Size(), 0)
 		}
 	}
 
@@ -37,7 +37,7 @@ func TestPop(t *testing.T) {
 		}
 
 		if stack.Size() != 0 {
-			t.Errorf("Incorrect result\ngot:  %d\nwant: %d", stack.Size, 0)
+			t.Errorf("Incorrect result\ngot:  %d\nwant: %d", stack.Size(), 0)
 		}
 	}
 }
@@ -80,7 +80,7 @@ func TestPeek(t *testing.T) {
 		}
 
 		if stack.Size() != 1 {
-			t.Errorf("Incorrect result\ngot:  %d\nwant: %d", stack.Size, 1)
+			t.Errorf("Incorrect result\ngot:  %d\nwant: %d", stack.Size(), 1)
 		}
 	}
 }
