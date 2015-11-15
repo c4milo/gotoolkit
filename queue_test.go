@@ -25,19 +25,21 @@ func TestDequeue(t *testing.T) {
 	queues := []Queue{new(ListQueue), new(SliceQueue)}
 
 	for _, queue := range queues {
-		queue.Enqueue("Test")
+		queue.Enqueue("Test1")
+		queue.Enqueue("Test2")
+		queue.Enqueue("Test3")
 		item, err := queue.Dequeue()
 
 		if err != nil {
 			t.Errorf("Incorrect result\ngot:  %v\nwant: %v", err, nil)
 		}
 
-		if item != "Test" {
-			t.Errorf("Incorrect result\ngot:  %s\nwant: %s", item, "Test")
+		if item != "Test1" {
+			t.Errorf("Incorrect result\ngot:  %s\nwant: %s", item, "Test1")
 		}
 
-		if queue.Size() != 0 {
-			t.Errorf("Incorrect result\ngot:  %d\nwant: %d", queue.Size(), 0)
+		if queue.Size() != 2 {
+			t.Errorf("Incorrect result\ngot:  %d\nwant: %d", queue.Size(), 2)
 		}
 	}
 }
